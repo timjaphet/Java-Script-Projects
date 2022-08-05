@@ -43,3 +43,13 @@ document.write(59 < 32 || 59 < 32); // used (or) operator to show false comparis
 function not_function() {
     document.getElementById("not").innerHTML = ! ( 56 > 81);
 } // used "not" operator to invert boolen value //
+
+ a = false;
+ b = true;
+result = a && b;
+document.getElementById('output').innerHTML += '\n' + a + ' && ' + b + '   is  ' + result;
+
+var index = 8;
+  var result = (typeof index === 'number');
+  alert(result);
+  // Output: true
