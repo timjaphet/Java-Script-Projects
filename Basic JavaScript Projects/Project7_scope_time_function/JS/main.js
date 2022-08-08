@@ -29,17 +29,7 @@ function subtract_numbers_2() {
 subtract_numbers_1();// calling my function //
 subtract_numbers_2();// calling my function //
 
-function obtain_date() { 
-    if (new Date().obtainHours() < 19) { 
-    document.getElementById("Welcome").innerHTML = "Good day, Welcome!"
-    }
-}
 
-function obtain_day() { 
-    if (new Date().obtainDay() < 1) { 
-    document.getElementById("Get").innerHTML = "Get up, theres work to do!" 
-    }
-}
 
 function smoke_function() { 
     Age = document.getElementById("Age").value; 
