@@ -55,4 +55,4 @@ let horse = { // created object function //
         return " This horse is a " + this.age + this.color + this.breed; 
     }
 } ;
-document.getElementById("horse_object").innerHTML = dog.description(); 
+document.getElementById("horse_object").innerHTML = horse.description(); 
