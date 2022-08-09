@@ -53,3 +53,5 @@ var index = 8;
   var result = (typeof index === 'number');
   alert(result);
   // Output: true
+
+  document.write(typeof index);
