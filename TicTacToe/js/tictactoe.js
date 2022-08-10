@@ -41,7 +41,7 @@ function placeXoro(squareNumber) {
         //this function results in a random square being selected.
         audio('./media/place.mp3') ;
         //thiis condition check to see iff it is computers turn.
-        if(activePlayer === '0') {
+        if(activePlayer === 'O') {
             //this function disables clicking for computer choice.
             disableClick();
             //this function waits 1 scond before placing the image
@@ -61,7 +61,7 @@ function placeXoro(squareNumber) {
         // trying if a square is selected already.
         while(!success) {
             //a randome number between 0 and 8 is selected
-            pickAsquare = String(math.floor(math.random() * 9));
+            pickAsquare = String(Math.floor(Math.random() * 9));
             //if the random number evaluates returns true, the square hasnt been selected yet
             if (placeXoro(pickAsquare)) {
                 //this line calls the function.
