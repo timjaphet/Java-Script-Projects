@@ -8,4 +8,4 @@ function mydictionary() {
     };
     delete vehcicle.Make;
     document.getElementById("Dictionary").innerHTML = vehcicle.Make;
-} //created dictionary using function along with the document. get element by id to display the make of the var vehcicle//
+} //created dictionary using function with the document. get element by id to display the make of the var vehcicle//
