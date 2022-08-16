@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script> 
+$(document).ready(function() { 
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+
+    );
+    $("#2").css({"color":"red"});
+    $("#3").click(function() {
+        $('h1').hide();
+    });
+});
+
+
+</script>
+</html>
+
+<!-- on line 22 created css function to target paragraph 2 to display red font-->
+<!--on line 23 created a click function so that when I click paragraph 3 it hides our header-->
