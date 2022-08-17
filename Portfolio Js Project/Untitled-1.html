@@ -1,0 +1,163 @@
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Tim Allison</title>
+          <link rel="stylesheet" type="text/css" href="por_css.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+		  
+
+<!-- Body -->
+<body class="Background"> 
+    
+
+<!-- Navbar -->
+	<div class="Navbar">
+        <a class="active" href="#Home"><i class="fa fa-home">Home</i></a>
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
+    </div>
+    
+    <!-- Home -->
+	<div id="Home">
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+		
+
+
+<!-- Video -->
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="./Images/Technology_digital_background_.mov" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text -->   
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Tim Allison's Portfolio</h1>
+			<p> 
+			  <strong>
+					
+						<center>
+                            <q>Success is not the key to happiness.
+                            <br>Happiness is the key to success.
+                            <br>If you love what you are doing, you will be successful.
+                            </q>	
+                            <br> Albert Schweitzer<br>
+                            <br>
+                            My name is Tim Allison. Welcome to my portfolio website.<br>
+                            <br>Thank you for stopping by and enjoy! 
+                        </center>	
+						
+			  </strong>				
+			</p> 
+	</div>
+
+<!-- Slideshow section -->
+  <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 4</div>
+            <img class="Slide_Show_Images" src="./Images/tim_pic.jpg" style="width:60%">
+              <div class="text">I'm available to assist you on your project!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 4</div>
+            <img class="Slide_Show_Images" src="./Images/HTML_CSS_and_JavaScript.png" style="width:60%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 4</div>
+            <img class="Slide_Show_Images" src="./Images/Python.jpg" style="width:60%">
+              <div class="text">the popular programming language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 4</div>
+            <img class="Slide_Show_Images" src="./Images/SQL_and_Database.png" style="width:60%">
+              <div class="text"> SQL & Database</div>
+        </div>
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- About section -->
+<div class="Row" id="About">
+    <div class="Column_1">
+      <img  src="./Images/laptop.jpg" class="card-img-top" alt="Laptop">
+      <div class="card-body">
+      </div>
+    </div>
+    <div class="Column_2">
+        <h2 style="color: aliceblue;">About</h2>
+	    <p style="color: blue;">Hi! My name is Tim Allison. I am 30 year old living in beautiful Colorado. Currently I am a student of the <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> Python Developer Boot Camp. My bootcamp includes program languages such at HTML, CSS, Javascript, SQL, and of course Python. Post graduation I would love to pick up my first job as an entry level developer.<br><br>I would also love to work with you on any project you find my talents usefull for. <a href="#Contact">Contact</a> me below!</p>
+      <div class="card-body">
+    </div>
+    </div>
+    <div class="Column_3">
+            <img src="./Images/GitHub.png" class="card-img-top" alt="..." >
+            <a href="https://github.com/timjaphet" target="_blank">Timothy Allison Github</a>
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+
+<!-- Contact section -->
+  <div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
+	
+<!-- Footer section -->	
+<footer>
+    <h2 style="color:rgb(253, 253, 253)"><center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br></h2>
+</footer>
+
+
+	<script src="./JS/main.js"></script>
+	
+</body>
+</html>
